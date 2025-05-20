@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Opcional: facilita o cálculo de dimensões */
+}
+
+#root {
+    height: 100vh;
+    
+}
+
+body {
+  height: 900vh;
+}
+
+
+nav.menu-lateral {
+  width: 80px;
+  height: 100%;
+  background-color: #202020;
+  padding: 40px 0px 40px 1%;
+  box-shadow: 3px 0 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: width 0.7s; /* mais explícito */
+}
+
+nav.menu-lateral.expandir {
+  width: 300px;
+}
+
+
+.btn-expandir {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir > i{
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu:hover{
+    background: #f07;
+}
+
+ul li.item-menu{
+    transition: .2;
+}
+
+ul li.ativo{
+    background-color: #f07;
+}
+
+ul li.item-menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 70px;
+    transition: 1.0s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link{
+    margin-left: 40px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+    margin-left: 10px;
+}
