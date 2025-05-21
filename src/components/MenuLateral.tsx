@@ -23,7 +23,6 @@ export default function MenuLateral(props: any){
     ])
 
     useEffect(()=> {
-        debugger;
         setItemMenuState('1');
     }, [])
 

@@ -1,0 +1,19 @@
+
+header.cabecalho-dashboard{
+    margin-top: 18px;
+    margin-bottom: 18px;
+    line-height: 40px;
+}
+
+button.btn-primary{
+    margin-bottom: 4px;
+    padding: 0;
+}
+
+i.bi-plus{
+    font-size: 15px;
+}
+
+div.info-produtos{
+    width: 45%;
+}
