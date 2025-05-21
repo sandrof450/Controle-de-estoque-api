@@ -7,9 +7,9 @@ interface MenuItem{
     icone: string;
 }
 
-export default function MenuLateral(){   
+export default function MenuLateral(props: any){   
     const [itemMenuState, setItemMenuState] = useState<string | null>(null);
-    const [expandirMenuLateral, setExpandirMenuLateral] = useState<Boolean | false>(false);
+    // const [expandirMenuLateral, setExpandirMenuLateral] = useState<Boolean | false>(false);
     
     const [items] = useState<MenuItem[]>([
     {id: '1', text: 'Dashboard', icone: 'bi bi-columns-gap'},
@@ -34,14 +34,14 @@ export default function MenuLateral(){
     return (
         <>
             <nav 
-                className={`menu-lateral ${expandirMenuLateral === true? 'expandir': ''}`}
+                className={`menu-lateral ${props.expandirMenuLateral === true? 'expandir': ''}`}
             >
                 <div className='btn-expandir'>
                 <i 
                     className='bi bi-list'
                     id='btn-exp' 
                     onClick={() => {
-                        setExpandirMenuLateral(!expandirMenuLateral);
+                        props.setExpandirMenuLateral(!props.expandirMenuLateral);
                     }}
                 ></i>
                 </div>

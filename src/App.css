@@ -6,19 +6,28 @@
 
 #root {
     height: 100vh;
-    display: flex;
 }
 
 body {
   height: 100vh;
 }
 
-.app-container {
+.container-geral {
   display: flex;
   height: 100vh;
+  background-color: #f5f7fa;
 }
 
-.conteudo-principal {
-  flex: 1;
-  transition: margin 0.7s;
+.menu-lateral.expandir {
+  width: 310px;
+}
+
+.container-dashboard{
+  margin-left: 120px;
+  transition: 0.7s;
+}
+
+.container-dashboard.expandir{
+  margin-left: 350px;
+  transition: 0.7s;
 }

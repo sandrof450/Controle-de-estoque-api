@@ -4,7 +4,7 @@ import '../App.css'
 export default function Dashboard(){
     return(
         <>
-            <div>
+            <div className="dashboard">
                 <p>Teste</p>
             </div>
             
